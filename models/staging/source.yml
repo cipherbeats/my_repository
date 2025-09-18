@@ -1,14 +1,14 @@
 version: 2
 sources:
   - name: datafeed_shared_schema
-    database: "{{('dbt_db')}}"
-    schema: staging
+    database: "{{('raw')}}"
+    schema: raw_sch
     tables:
-      - name: stg_customerdata
-      - name: stg_order
-      - name: stg_payment
-      - name: stg_item_data
-      - name: stg_product_data
-      - name: stg_store_data
-      - name: stg_supplier_data
-      - name: emp
+      - name: customer
+      - name: orders
+      - name: payment
+      - name: item_data
+      - name: products
+      - name: store
+      - name: supplier
+  
